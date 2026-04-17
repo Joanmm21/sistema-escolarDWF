@@ -1,3 +1,5 @@
+--mismas tablas a utilizar en la base de datos Mysql
+
 CREATE TABLE profesor (
   id BIGINT AUTO_INCREMENT PRIMARY KEY,
   nombre VARCHAR(100) NOT NULL
