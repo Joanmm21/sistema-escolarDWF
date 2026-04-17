@@ -11,9 +11,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/profesores")
-@Tag(name = "Profesores", description = "Endpoints para la gestión de profesores")
+@Tag(name = "Profesores", description = "Endpoints para la gestión de profesores") //interfaz visual de las pruebas
 public class ProfesorController {
 
+    //inyeccion de dependencias
     @Autowired
     private ProfesorService profesorService;
 
