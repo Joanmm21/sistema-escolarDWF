@@ -1,8 +1,13 @@
 package com.escuela.sistemaescolar.model;
+
 import jakarta.persistence.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "materia")
+@Data
+@NoArgsConstructor
 public class Materia {
 
     @Id
@@ -15,25 +20,4 @@ public class Materia {
     @ManyToOne
     @JoinColumn(name = "id_profesor")
     private Profesor profesor;
-
-    // Getters y Setters
-
-    public Long getId() {
-        return id;
-    }
-    public void setId(Long id) {
-        this.id = id;
-    }
-    public String getNombre() {
-        return nombre;
-    }
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-    public Profesor getProfesor() {
-        return profesor;
-    }
-    public void setProfesor(Profesor profesor) {
-        this.profesor = profesor;
-    }
 }
